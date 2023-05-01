@@ -61,9 +61,9 @@ function my_acf_after_save_post( $post_id ) {
 		}	
 	}
 }
-if( function_exists( get_fields() ) ) {
-    // add_action('acf/save_post', 'my_acf_after_save_post');
-}
+// if( function_exists( get_fields() ) ) {
+//     // add_action('acf/save_post', 'my_acf_after_save_post');
+// }
 
 
 /********************************************************************************* */
