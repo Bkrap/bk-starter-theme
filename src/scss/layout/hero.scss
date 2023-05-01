@@ -1,0 +1,47 @@
+.hero{
+    padding-top: 135px;
+    padding-bottom: 135px;
+    background: #ECF1F3;
+    .text-wrapper{
+        padding-bottom: 120px;
+        padding-top: 120px;
+        .heading{
+            padding-bottom: 30px;
+        }
+        .description{
+            padding-bottom: 30px;
+            padding-right: 130px;
+        }
+    }
+
+    .circles-wrapper{
+        position: relative;
+        .circle{
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            position: absolute;
+            filter: blur(200px);
+            &-blue{
+                background-color: $blue;
+                top: -25%;
+                left: 0;
+            }
+            &-orange{
+                background-color: $orange;
+                right: 0;
+                bottom: 25%;
+            }
+            &-teal{
+              background-color: $teal;
+              left: -50%;
+              bottom: 10%;
+            }
+            &-gradient{
+                bottom: -8%;
+                left: 25%;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #208999;;
+            }
+        }
+    }
+}

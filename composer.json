@@ -1,0 +1,13 @@
+{
+    "name": "bruno/bk-starter-theme",
+    "description": "Composer starter.",
+    "type": "project",
+    "license": "Bruno Krapljan",
+    "autoload": {
+        "psr-4": {
+            "Bruno\\BkStarterTheme\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "require": {}
+}

@@ -1,0 +1,71 @@
+.color-cards{
+    padding-bottom: 50px;
+    background: #ecf1f3;
+    .cards-row{
+        margin-top: 80px;
+        .full-width{
+            margin-top: 32px;
+            .card-body{
+                flex: 0;
+            }
+            .card-footer{
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+        .card{
+            box-shadow: 0px 15px 30px 3px #CACACA;
+            border-radius: 15px;
+            border: none;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            min-height: 350px;
+            color: $white;
+            .card-footer{
+                border: none;
+                background: none;
+                padding-bottom: 0;
+            }
+            &-coral{
+                background-color: $coral;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $coral;
+                        }
+                    }
+                }
+            }
+            &-teal{
+                background-color: $teal;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $teal;
+                        }
+                    }
+                }
+            }
+            &-dark-green{
+                background-color: $dark-green;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $dark-green;
+                        }
+                    }
+                }
+            }
+            &-orange{
+                background-color: $orange;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

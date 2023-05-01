@@ -1,0 +1,1019 @@
+{
+    "key": "group_642f173c77557",
+    "title": "Page builder",
+    "fields": [
+        {
+            "key": "field_642f173c96aa3",
+            "label": "Page builder",
+            "name": "page_builder",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_flexible_advanced": 0,
+            "layouts": {
+                "layout_642f174e837ed": {
+                    "key": "layout_642f174e837ed",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_642f1b1796aa4",
+                            "label": "Button Group",
+                            "name": "button_group",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "acfe_field_group_condition": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_642f1b2d96aa5",
+                                    "label": "Show button?",
+                                    "name": "show_button",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "message": "",
+                                    "default_value": 0,
+                                    "style": "",
+                                    "ui_on_text": "Yes",
+                                    "ui_off_text": "No",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_642f1bc696aa6",
+                                    "label": "Button",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_642f1b2d96aa5",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "layout": "block",
+                                    "acfe_seamless_style": 0,
+                                    "acfe_group_modal": 0,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_642f1bce96aa7",
+                                            "label": "Label",
+                                            "name": "label",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_642f1bdb96aa8",
+                                            "label": "Function",
+                                            "name": "function",
+                                            "aria-label": "",
+                                            "type": "select",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "choices": {
+                                                "email": "Email",
+                                                "internal": "Internal",
+                                                "external": "External",
+                                                "document": "Document",
+                                                "anchor": "Anchor"
+                                            },
+                                            "default_value": "internal",
+                                            "return_format": "value",
+                                            "multiple": 0,
+                                            "prepend": "",
+                                            "append": "",
+                                            "max": "",
+                                            "allow_null": 0,
+                                            "ui": 0,
+                                            "ajax": 0,
+                                            "placeholder": "",
+                                            "allow_custom": 0,
+                                            "search_placeholder": "",
+                                            "min": ""
+                                        },
+                                        {
+                                            "key": "field_642f1c2996aa9",
+                                            "label": "Style",
+                                            "name": "style",
+                                            "aria-label": "",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "layout": "block",
+                                            "acfe_seamless_style": 0,
+                                            "acfe_group_modal": 0,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_642f1c3796aaa",
+                                                    "label": "Color",
+                                                    "name": "color",
+                                                    "aria-label": "",
+                                                    "type": "radio",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "choices": {
+                                                        "primary": "Green",
+                                                        "secondary": "Blue"
+                                                    },
+                                                    "default_value": "primary",
+                                                    "return_format": "value",
+                                                    "allow_null": 0,
+                                                    "other_choice": 0,
+                                                    "layout": "vertical",
+                                                    "save_other_choice": 0
+                                                }
+                                            ],
+                                            "acfe_group_modal_close": 0,
+                                            "acfe_group_modal_button": "",
+                                            "acfe_group_modal_size": "large"
+                                        },
+                                        {
+                                            "key": "field_642f1c6d96aab",
+                                            "label": "Anchor name",
+                                            "name": "anchor_name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "Enter the name for the section you want this button to lead to.",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_642f1bdb96aa8",
+                                                        "operator": "==",
+                                                        "value": "anchor"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_642f1cb496aac",
+                                            "label": "External",
+                                            "name": "external",
+                                            "aria-label": "",
+                                            "type": "url",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_642f1bdb96aa8",
+                                                        "operator": "==",
+                                                        "value": "external"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "placeholder": ""
+                                        },
+                                        {
+                                            "key": "field_642f1cc296aad",
+                                            "label": "Internal",
+                                            "name": "internal",
+                                            "aria-label": "",
+                                            "type": "page_link",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_642f1bdb96aa8",
+                                                        "operator": "==",
+                                                        "value": "internal"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "post_type": "",
+                                            "taxonomy": "",
+                                            "allow_archives": 1,
+                                            "multiple": 0,
+                                            "allow_null": 0
+                                        },
+                                        {
+                                            "key": "field_642f1cdc96aae",
+                                            "label": "Email",
+                                            "name": "email",
+                                            "aria-label": "",
+                                            "type": "email",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_642f1bdb96aa8",
+                                                        "operator": "==",
+                                                        "value": "email"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_642f1dfd7f4b2",
+                                            "label": "Document",
+                                            "name": "document",
+                                            "aria-label": "",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_642f1bdb96aa8",
+                                                        "operator": "==",
+                                                        "value": "document"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "layout": "block",
+                                            "acfe_seamless_style": 0,
+                                            "acfe_group_modal": 0,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_642f1e097f4b3",
+                                                    "label": "File",
+                                                    "name": "file",
+                                                    "aria-label": "",
+                                                    "type": "file",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "uploader": "",
+                                                    "return_format": "array",
+                                                    "upload_folder": "",
+                                                    "multiple": 0,
+                                                    "max": "",
+                                                    "min_size": "",
+                                                    "max_size": 3,
+                                                    "mime_types": "",
+                                                    "library": "all",
+                                                    "preview_style": "default",
+                                                    "placeholder": "Select",
+                                                    "button_label": "Add File",
+                                                    "stylised_button": 0,
+                                                    "file_count": 0,
+                                                    "min": ""
+                                                },
+                                                {
+                                                    "key": "field_642f1e1b7f4b4",
+                                                    "label": "Download",
+                                                    "name": "download",
+                                                    "aria-label": "",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "message": "",
+                                                    "default_value": 0,
+                                                    "ui_on_text": "Yes",
+                                                    "ui_off_text": "No",
+                                                    "ui": 1,
+                                                    "style": ""
+                                                }
+                                            ],
+                                            "acfe_group_modal_close": 0,
+                                            "acfe_group_modal_button": "",
+                                            "acfe_group_modal_size": "large"
+                                        }
+                                    ],
+                                    "acfe_group_modal_close": 0,
+                                    "acfe_group_modal_button": "",
+                                    "acfe_group_modal_size": "large"
+                                }
+                            ],
+                            "acfe_group_modal_close": 0,
+                            "acfe_group_modal_button": "",
+                            "acfe_group_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_layout_locations": [],
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_6435bcaf564e9": {
+                    "key": "layout_6435bcaf564e9",
+                    "name": "argo_on_youtube",
+                    "label": "ARGO on Youtube",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6435bcc5564eb",
+                            "label": "Top label",
+                            "name": "top_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "ARGO on Youtube",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6435bcdf564ec",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Watch now!",
+                            "acfe_textarea_code": 0,
+                            "required_message": "",
+                            "maxlength": "",
+                            "rows": 1,
+                            "placeholder": "",
+                            "new_lines": "br",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6435bcf7564ed",
+                            "label": "Text",
+                            "name": "text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Become a member to support the necessary advocacy, knowledge, and discussions for a realistic, moderate change in protecting sensible gun rights and ownership while providing the necessary legal and enforcement framework for a safer environment and a drastic reduction in needless gun violence.",
+                            "acfe_textarea_code": 0,
+                            "required_message": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": "br",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6435bd20564ee",
+                            "label": "Button Group",
+                            "name": "button_group",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "acfe_field_group_condition": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6435bd21564ef",
+                                    "label": "Show button?",
+                                    "name": "show_button",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "required_message": "",
+                                    "message": "",
+                                    "default_value": 0,
+                                    "style": "",
+                                    "ui_on_text": "Yes",
+                                    "ui_off_text": "No",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_6435bd21564f0",
+                                    "label": "Button",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_6435bd21564ef",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "required_message": "",
+                                    "layout": "block",
+                                    "acfe_seamless_style": 0,
+                                    "acfe_group_modal": 0,
+                                    "acfe_group_modal_close": 0,
+                                    "acfe_group_modal_button": "",
+                                    "acfe_group_modal_size": "large",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_6435bd21564f1",
+                                            "label": "Label",
+                                            "name": "label",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f2",
+                                            "label": "Function",
+                                            "name": "function",
+                                            "aria-label": "",
+                                            "type": "select",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "choices": {
+                                                "email": "Email",
+                                                "internal": "Internal",
+                                                "external": "External",
+                                                "document": "Document",
+                                                "anchor": "Anchor"
+                                            },
+                                            "default_value": "internal",
+                                            "return_format": "value",
+                                            "multiple": 0,
+                                            "allow_custom": 0,
+                                            "placeholder": "",
+                                            "search_placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "min": "",
+                                            "max": "",
+                                            "allow_null": 0,
+                                            "ui": 0,
+                                            "ajax": 0
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f3",
+                                            "label": "Style",
+                                            "name": "style",
+                                            "aria-label": "",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "layout": "block",
+                                            "acfe_seamless_style": 0,
+                                            "acfe_group_modal": 0,
+                                            "acfe_group_modal_close": 0,
+                                            "acfe_group_modal_button": "",
+                                            "acfe_group_modal_size": "large",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_6435bd21564f4",
+                                                    "label": "Color",
+                                                    "name": "color",
+                                                    "aria-label": "",
+                                                    "type": "radio",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "required_message": "",
+                                                    "choices": {
+                                                        "primary": "Green",
+                                                        "secondary": "Blue"
+                                                    },
+                                                    "default_value": "primary",
+                                                    "return_format": "value",
+                                                    "allow_null": 0,
+                                                    "other_choice": 0,
+                                                    "save_other_choice": 0,
+                                                    "layout": "vertical"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f5",
+                                            "label": "Anchor name",
+                                            "name": "anchor_name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "Enter the name for the section you want this button to lead to.",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_6435bd21564f2",
+                                                        "operator": "==",
+                                                        "value": "anchor"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f6",
+                                            "label": "External",
+                                            "name": "external",
+                                            "aria-label": "",
+                                            "type": "url",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_6435bd21564f2",
+                                                        "operator": "==",
+                                                        "value": "external"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "placeholder": ""
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f7",
+                                            "label": "Internal",
+                                            "name": "internal",
+                                            "aria-label": "",
+                                            "type": "page_link",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_6435bd21564f2",
+                                                        "operator": "==",
+                                                        "value": "internal"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "post_type": "",
+                                            "taxonomy": "",
+                                            "allow_archives": 1,
+                                            "multiple": 0,
+                                            "allow_null": 0
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f8",
+                                            "label": "Email",
+                                            "name": "email",
+                                            "aria-label": "",
+                                            "type": "email",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_6435bd21564f2",
+                                                        "operator": "==",
+                                                        "value": "email"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_6435bd21564f9",
+                                            "label": "Document",
+                                            "name": "document",
+                                            "aria-label": "",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_6435bd21564f2",
+                                                        "operator": "==",
+                                                        "value": "document"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_field_group_condition": 0,
+                                            "required_message": "",
+                                            "layout": "block",
+                                            "acfe_seamless_style": 0,
+                                            "acfe_group_modal": 0,
+                                            "acfe_group_modal_close": 0,
+                                            "acfe_group_modal_button": "",
+                                            "acfe_group_modal_size": "large",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_6435bd21564fa",
+                                                    "label": "File",
+                                                    "name": "file",
+                                                    "aria-label": "",
+                                                    "type": "file",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "required_message": "",
+                                                    "uploader": "",
+                                                    "return_format": "array",
+                                                    "library": "all",
+                                                    "preview_style": "default",
+                                                    "placeholder": "Select",
+                                                    "upload_folder": "",
+                                                    "button_label": "Add File",
+                                                    "stylised_button": 0,
+                                                    "file_count": 0,
+                                                    "multiple": 0,
+                                                    "min": "",
+                                                    "max": "",
+                                                    "min_size": "",
+                                                    "max_size": 3,
+                                                    "mime_types": ""
+                                                },
+                                                {
+                                                    "key": "field_6435bd21564fb",
+                                                    "label": "Download",
+                                                    "name": "download",
+                                                    "aria-label": "",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "acfe_field_group_condition": 0,
+                                                    "required_message": "",
+                                                    "message": "",
+                                                    "default_value": 0,
+                                                    "style": "",
+                                                    "ui_on_text": "Yes",
+                                                    "ui_off_text": "No",
+                                                    "ui": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "acfe_group_modal_close": 0,
+                            "acfe_group_modal_button": "",
+                            "acfe_group_modal_size": "large"
+                        },
+                        {
+                            "key": "field_6435bd3a564fc",
+                            "label": "Video",
+                            "name": "video",
+                            "aria-label": "",
+                            "type": "oembed",
+                            "instructions": "Only YouTube and Vimeo supported!",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": "",
+                            "required_message": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6435c0d0857e9",
+                            "label": "Section name",
+                            "name": "section_name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Name this section in case you need to make it as a linkable\/anchor object.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "my-section",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_layout_locations": [],
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add section",
+            "acfe_field_group_condition": 0,
+            "acfe_flexible_stylised_button": false,
+            "acfe_flexible_hide_empty_message": false,
+            "acfe_flexible_empty_message": "",
+            "acfe_flexible_layouts_templates": false,
+            "acfe_flexible_layouts_previews": false,
+            "acfe_flexible_layouts_placeholder": false,
+            "acfe_flexible_layouts_thumbnails": false,
+            "acfe_flexible_layouts_settings": false,
+            "acfe_flexible_layouts_locations": false,
+            "acfe_flexible_async": [],
+            "acfe_flexible_add_actions": [],
+            "acfe_flexible_remove_button": [],
+            "acfe_flexible_layouts_state": false,
+            "acfe_flexible_modal_edit": {
+                "acfe_flexible_modal_edit_enabled": false,
+                "acfe_flexible_modal_edit_size": "large"
+            },
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": false,
+                "acfe_flexible_modal_title": false,
+                "acfe_flexible_modal_size": "full",
+                "acfe_flexible_modal_col": "4",
+                "acfe_flexible_modal_categories": false
+            },
+            "acfe_flexible_grid": {
+                "acfe_flexible_grid_enabled": false,
+                "acfe_flexible_grid_align": "center",
+                "acfe_flexible_grid_valign": "stretch",
+                "acfe_flexible_grid_wrap": false
+            },
+            "acfe_flexible_grid_container": false
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_display_title": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1681244745
+}

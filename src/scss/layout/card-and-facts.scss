@@ -1,0 +1,88 @@
+.card-and-facts{
+    padding-top: 45px;
+    background-size: cover;
+    min-height: 690px;
+    // border-radius: 30px 30px 0 0;
+}
+.facts{
+    background: linear-gradient(89.83deg, #ECF4F8 0.17%, #F3FAFC 99.89%);
+    position: relative;
+    .cards-container{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -25%;
+    }
+    .cards-row{
+        // margin-top: -175px;
+        .card{
+            box-shadow: 0px 15px 30px 3px #CACACA;
+            border-radius: 15px;
+            border: none;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            min-height: 350px;
+            color: $white;
+            .card-footer{
+                border: none;
+                background: none;
+                padding-bottom: 0;
+            }
+            &-coral{
+                background-color: $coral;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $coral;
+                        }
+                    }
+                }
+            }
+            &-teal{
+                background-color: $teal;
+                .card-body{
+                    svg{
+                        path{
+                            fill: $teal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-facts{
+        padding-top: 320px;
+    }
+    .circle{
+        border-radius: 50%;
+        border: 2px solid $coral;
+        aspect-ratio: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: $coral;
+        }
+        .big-number{
+            font-size: 60px;
+            color: $coral;
+        }
+        &-1{
+            width: 30%;
+        }
+        &-2{
+            width: 50%;
+        }
+        &-3{
+            width: 35%;
+        }
+        &-4{
+            width: 35%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.btn{
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 22px;
+    border: none;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    transition: $transition;
+    &:hover{
+        color: #ffffff;
+    }
+    &-primary{
+        background: linear-gradient(83.43deg, $teal 0.34%, $coral 126.08%);
+        &:hover{
+            background: linear-gradient(83.43deg, $coral 0.34%, $teal 126.08%);
+        }
+    }
+    &-secondary{
+        background: $coral;
+        &:hover{
+            
+        }
+    }
+    &-white{
+        background: $white;
+        color: $teal;
+    }
+}
+
+.arrow-link{
+    text-decoration: none;
+    .link-text{
+        color: $white;
+        font-size: 15px;
+        margin-right: 5px;
+        font-weight: 600;
+    }
+}
