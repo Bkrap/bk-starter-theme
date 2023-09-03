@@ -12,7 +12,7 @@ Requirements:
     - don't forget to include dependencies scss in the root/src/scss/main.scss
     - don't forget to include JS files in webpack.config.js (search for "main": glob.sync('./src/js/**/*.js') and follow the logic)
     - don't forget to include that new builded js into "\root-theme\includes\enqueue.php"
-2. npm run build 
+2. npm run start - development / npm run build - production
     - root/src/scss/main.scss compiles the scss to 'build/styles.css' & all js files inside '/src/js/' to '/build/main.js'
 
 /***/

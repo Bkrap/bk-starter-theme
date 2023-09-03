@@ -1,0 +1,4 @@
+(()=>{"use strict";var __webpack_modules__={"./src/scss/main.scss":
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack/./src/scss/main.scss?")}},__webpack_require__={r:_=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(_,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(_,"__esModule",{value:!0})}},__webpack_exports__={};__webpack_modules__["./src/scss/main.scss"](0,__webpack_exports__,__webpack_require__)})();

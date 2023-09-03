@@ -4,5 +4,5 @@ Promise.all([
     // fse.copy('./node_modules/bootstrap', './src/vendor/bootstrap'),
     // fse.copy('./node_modules/example', './src/vendor/example'),
 ])
-    .then(() => console.log('Dependencies copied successfully! You can now run "npm run build"'))
+    .then(() => console.log('Dependencies copied successfully! You can now run "npm run start"'))
     .catch(err => console.error(err));
