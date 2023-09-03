@@ -10,6 +10,8 @@ Requirements:
 2. npm run copy
     - will install dependencies like bootstrap e.g (add/change new copy path from node_modules to vendor for dependencies in 'root/dist/copy-files.js)
     - don't forget to include dependencies scss in the root/src/scss/main.scss
+    - don't forget to include JS files in webpack.config.js (search for "main": glob.sync('./src/js/**/*.js') and follow the logic)
+    - don't forget to include that new builded js into "\root-theme\includes\enqueue.php"
 2. npm run build 
     - root/src/scss/main.scss compiles the scss to 'build/styles.css' & all js files inside '/src/js/' to '/build/main.js'
 

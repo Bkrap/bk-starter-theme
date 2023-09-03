@@ -5,6 +5,10 @@
  * @since 1.0.0.
  *
  */
+// without this AJAX LOGIN won't work because headers has been already sent
+// add_filter('template_redirect', function () {
+//     ob_start(null, 0, 0);
+//   });
 
 define('BK_STARTER_THEME_PATH', get_template_directory_uri());
 define('THEME_DIR', get_stylesheet_directory());
@@ -15,22 +19,22 @@ define('SITE_URL', get_site_url("/"));
 
 include 'includes/enqueue.php';
 include 'includes/theme-functions.php';
+include 'includes/admin_custom_login/admin_custom_login.php';
 
 /**
  * ACF
  */
 
-// if( 2 == 2 ) {
-//     define('THEME_OPTIONS', get_fields('option'));
-//     include 'includes/acf.php';
-// }
+if( 2 == 2 ) { // hehe
+    define('THEME_OPTIONS', get_fields('option')['global_options']);
+    include 'includes/acf.php';
+}
 
 
 /************** */
 
-
 // CPTs
-// include 'includes/CPT/';
+include 'includes/CPT/partners.php';
 
 /********************************************************************************************************************************************* */
 

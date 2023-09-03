@@ -5,10 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const glob = require('glob');
 // const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
+// const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 // const sass = require('node-sass');
 
 // Hard code this to production but can be adapted to accept args to change env.
-const mode = 'production';
+const mode = 'development';
 
 // const copyPlugin = new CopyPlugin({
 //   patterns: [
@@ -35,13 +36,8 @@ module.exports = {
         extractComments: false,
       }),
     ],
-  },
-
-  resolve: {
-    extensions: ['.css', '.scss'],
-    alias: {
-      // Provides ability to include node_modules with ~
-      '~': path.resolve(process.cwd(), 'src'),
+    splitChunks: {
+      chunks: 'all',
     },
   },
 
@@ -50,6 +46,7 @@ module.exports = {
     "styles": './src/scss/main.scss',
     // Will create "main.js" in "build" dir.
     "main": glob.sync('./src/js/**/*.js'),
+    // "bootstrap": glob.sync('./src/vendor/bootstrap/dist/js/**/*.js'),
 
   },
 
@@ -79,6 +76,14 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
+    // new BrowserSyncPlugin({
+    //   host: 'localhost',
+    //   port: 3000,
+    //   server: { baseDir: ['build'] },
+    //   files: ['build/**/*'],
+    //   injectChanges: true,
+    //   notify: false,
+    // }),
     // copyPlugin,
   ]
 }
